@@ -11,7 +11,7 @@ changeIcon.js is a small favicon changer library that uses event emitters
 
 Documentation
 -------------
-###Basic Usage
+### Basic Usage
 ```javascript
 changeIcon.addAction("initial" ,"Welcome!" ,"favicon.ico");
 // Emit the action anytime you want
