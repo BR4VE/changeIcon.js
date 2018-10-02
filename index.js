@@ -34,10 +34,8 @@
 			if(links[i].rel === "icon") mainFavicons.push(links[i]);
 		}
 		// add standart action for turning to original
-
 		addAction("original",mainTitle.innerText,mainFavicons[0].href);
-
-		// when user changes the tabs
+		
 		opt.mainTitle = mainTitle;
 		opt.favicons = mainFavicons;
 	}
