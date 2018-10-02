@@ -90,3 +90,9 @@
 
 	window.changeIcon = changeIcon;
 })();
+
+changeIcon.onAnotherTab("Nooo!", "crying.ico");
+changeIcon.onThisTab(() => {
+	changeIcon.addAction("lel","Welcome!","smiling.ico");
+	changeIcon.emitAction("lel");
+});
