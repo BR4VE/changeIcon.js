@@ -2,7 +2,7 @@ Welcome to changeIcon.js
 ===================
 
 
-changeIcon.js is a small favicon changer library that uses event emitters
+changeIcon.js is a small favicon and title changer library that uses event emitters
 
 ----------
 <img src="images/one.png">
