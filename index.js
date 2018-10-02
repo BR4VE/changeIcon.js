@@ -1,4 +1,3 @@
-
 (function() {
 	// global object
 	const changeIcon = {
@@ -39,11 +38,9 @@
 		opt.mainTitle = mainTitle;
 		opt.favicons = mainFavicons;
 	}
-	getInitialOpt();
 	
 	function addNewFavicons(icon) {
-		//-> Changing the favicons source (href) is unsiffcent
-		//-> I have to remove all of them and create new ones
+		//-> Changing the favicons source (href) is unsiffcent have to remove all of them and create new ones
 		const head = document.getElementsByTagName("head")[0];
 
 		for(let i = 0; i < head.children.length; i++) {
@@ -86,5 +83,8 @@
 		addNewFavicons(action.icon);
 	}
 
+	getInitialOpt();
+
 	window.changeIcon = changeIcon;
+	
 })();
