@@ -58,9 +58,9 @@
 	}
 	
 	function addAction(name,title,icon) {
-		if(!name || !title || !icon) return "provide values";
+		if(!name || !title || !icon) throw "provide values";
 		// check for other actions with same name
-		if(changeIcon.actions.find(action => action.name === name)) return name + " was used before";
+		if(changeIcon.actions.find(action => action.name === name)) throw name + " was used before";
 
 		// push the new action
 		changeIcon.actions.push({
@@ -76,7 +76,7 @@
 			return name === action.name;
 		});
 		// return if not found
-		if(!action) return name + " was not found";
+		if(!action) throw name + " was not found";
 		// setup options
 		opt.mainTitle.innerText = action.title;
 		// delete all existing favicons and and new ones
